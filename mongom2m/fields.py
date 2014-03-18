@@ -526,6 +526,8 @@ class MongoDBManyToManyRel(object):
         self.multiple = True
         self.limit_choices_to = {}
     
+    def on_delete(self):
+        pass
     
     def is_hidden(self):
         return False
